@@ -1,8 +1,8 @@
 # SimpleTravelBlog
-INFSCI 2560 Web Technology & Standards
-Assignment 1
-Kenny Wu
-September 30th, 2019
+INFSCI 2560 Web Technology & Standards  
+Assignment 1  
+Kenny Wu  
+September 30th, 2019  
 
 A simple web application.
 
