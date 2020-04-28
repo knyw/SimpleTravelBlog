@@ -1,0 +1,328 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 15rem;;
+}
+button {
+    font-size: 1rem;
+    background-color: rgb(0, 155, 0);
+    border: none;
+    padding: 0.3rem 0.7rem;
+    color: white;
+}
+button:hover {
+    background-color: rgb(0, 194, 0);
+}
+footer {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15rem;
+    padding: 1rem 0 0;
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+}
+footer > * {
+    color: white;
+}
+.navBar {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 2rem;
+    list-style: none;
+    background-color: rgb(80, 80, 80);
+}
+.navBar > a, .navBar > span > a {
+    text-align: center;
+    width: 9rem;
+    color: white;
+    margin: 0.2rem;
+    padding: 0.75rem;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.navBar > a {
+    margin: 0.2rem;
+}
+.navBar > a:hover, .navBar > span > a:hover {
+    background-color: rgb(114, 114, 114);
+}
+.navBar > .active, .navBar > span > .active {
+    background-color: rgb(114, 114, 114);
+}
+.navBar > span {
+    position: relative;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    list-style: none;
+    background-color: rgb(80, 80, 80);
+    z-index: 5;
+    border-radius: 5px;
+}
+.dropdown > a {
+    text-align: center;
+    width: 9rem;
+    color: white;
+    padding: 0.75rem;
+    display: block;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.dropdown > a:hover {
+    background-color: rgb(114, 114, 114);
+}
+.dropdown > .active {
+    background-color: rgb(114, 114, 114);
+}
+.mainFigure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.caption {
+    position: absolute;
+    color: white;
+    margin: 0;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainBody {
+    position: relative;
+    padding: 5rem 0;
+}
+.gridBox {
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    padding: 1rem;
+    grid-gap: 0 20px;
+    overflow: auto;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-auto-rows: 420px;
+}
+.grid {
+    position: relative;
+    height: 400px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.gridImage {
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    z-index: 2;
+}
+.gridInfo {
+    position: absolute;
+    top: 45%;
+    padding: 0.5rem 0.5rem;
+    bottom: 2.5rem;
+    z-index: 3;
+    overflow: hidden;
+    background-color: rgb(240, 240, 240);
+    transition-duration: 0.5s;
+}
+.gridTitle {
+    margin: 0.5rem 1rem;
+    padding: 0;
+}
+.gridText {
+    margin: 0.5rem 1rem;
+    padding: 0;
+}
+.gridFade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    z-index: 4;
+    background: linear-gradient(rgba(240, 240, 240, 0), rgba(240, 240, 240, 1));
+}
+.gridButton {
+    position: absolute;
+    bottom: 0.5rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 7rem;
+    z-index: 5;
+}
+footer > p:first-child {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.subscribe {
+    padding: 0 15rem 0 10rem;
+}
+.subscribe > p {
+    display: inline-block;
+    width: 5rem;
+    margin: 0;
+}
+.subscribe > input[type="submit"] {
+    margin: 1rem 0 0 5rem;
+}
+footer > p:last-child {
+    position: absolute;
+    font-size: 0.8rem;
+    margin: auto;
+    padding: 0;
+    bottom: 0.3rem;
+    left: 0;
+    right: 0;
+}
+
+article, section {
+    position: relative;
+    width: 60rem;
+    height: 29rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+article:first-child, article:last-child, section:first-child, section:last-child {
+    margin: 0 auto;
+}
+article > h2, section > h2 {
+    text-align: center;
+    margin: 0.5rem;
+}
+article > img, article > table {
+    width: 30.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+article > table tr > td > img {
+    width: 15rem;
+    height: 10rem;
+}
+article > p {
+    width: 22.5rem;
+    margin: 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+article > button[class="right"] {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 10rem;
+    height: 3rem;
+}
+article > button[class="left"] {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 10rem;
+    height: 3rem;
+}
+.gridArea {
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "side center right"
+    "side center right1"
+    "side2 center right2"
+    "side2 center right3";
+    grid-gap: 1rem;
+}
+.gridArea > div {
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.gridArea > .element1 {
+    position: relative;
+    grid-area: side;
+    border-radius: 0;
+    background-color: white;
+    box-shadow: none;
+}
+.gridArea > .element1 > img {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.gridArea > .element2 {
+    position: relative;
+    grid-area: side2;
+    border-radius: 0;
+    background-color: white;
+    box-shadow: none;
+}
+.gridArea > .element2 > img {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.gridArea > .element2 > h3 {
+    position: absolute;
+    margin: 0;
+    text-align: center;
+    line-height: 18rem;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.gridArea > .element3 {
+    position: relative;
+    grid-area: center;
+    text-align: center;
+}
+.gridArea > .element3 > h2 {
+    text-align: center;
+    margin: 1rem 0 0;
+}
+.gridArea > .element3 > img {
+    margin: 1rem 5%;
+    width: 90%;
+}
+.gridArea > .element3 > ol {
+    display: inline-block;
+    text-align: left;
+}
+.gridArea > .element4 {
+    grid-area: right;
+}
+.gridArea > .element5 {
+    grid-area: right1;
+}
+.gridArea > .element6 {
+    grid-area: right2;
+}
+.gridArea > .element7 {
+    grid-area: right3;
+}
+.gridArea > .element4 > h3, .gridArea > .element5 > h3, .gridArea > .element6 > h3, .gridArea > .element7 > h3 {
+    padding: 0.5rem 1rem;
+}
